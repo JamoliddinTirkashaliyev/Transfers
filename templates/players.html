@@ -1,0 +1,30 @@
+{% extends 'header.html' %}
+
+{% block content %}
+  <div class="nav">
+        <h2>– PLAYERS –</h2>
+        <table class="content-nav">
+            <thead>
+              <tr>
+                <td>#</td>
+                <td>player</td>
+                <td>club</td>
+                <td>transfer value, <br> mill. euro</td>
+              </tr>
+            </thead>
+          </table>
+    </div>
+    <div class="content">
+        <table class="playerss">
+            {% for player in players %}
+          <tr>
+            <td>{{player.id}}</td>
+            <td>{{player.ism}}</td>
+            <td>{{player.club.nom}}</td>
+            <td>{{player.narx}}</td>
+          </tr>
+            {% endfor %}
+          </table>
+        <p> The transfer value of the player is a value of compensation for the  club, that allows to terminate the ongoing employment contract. Value indicated here  is a prediction of player's value analyzed by us for each football player. It is a list of players with transfer's value is at least 20 million euro.</p>
+      </div>
+{% endblock %}

@@ -1,0 +1,658 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100% !important;
+  // border: 2px solid black;
+  display: inline-block;
+  font-family: sans-serif;
+  // overflow: hidden;
+  .navbar {
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 99;
+    height: 70px !important;
+
+    .icon {
+      width: 100px;
+      overflow: hidden;
+      img {
+        width: 130%;
+        margin-left: -14%;
+      }
+    }
+    .links {
+      display: flex;
+      div {
+        width: 100px;
+
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        a {
+          color: white;
+          font-weight: 700;
+          text-decoration: none;
+          width: 100px !important;
+          height: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        a:hover {
+          color: rgb(1, 148, 197);
+          border-radius: 5px;
+          // padding: 10px 5px;
+          background-color: white;
+          box-shadow: 0 0 5px 5px white;
+        }
+      }
+    }
+    .country-menu-btn,
+    .navbar-menu-btn,
+    .country-menu,
+    .navbar-menu {
+      display: none;
+    }
+  }
+  .navActive {
+    border-bottom: 2px solid white !important;
+  }
+  .countries {
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -100px;
+    gap: 20px;
+    justify-content: center;
+    a {
+      color: white;
+      text-decoration: none;
+      width: 380px;
+      height: 140px;
+      background-color: red;
+      border-radius: 6px;
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: rgb(1, 148, 197) !important;
+        box-shadow: 0px 0px 8px 2px black;
+      }
+    }
+  }
+}
+.country-clubs {
+  width: 350px;
+  border: 1px solid rgb(255, 16, 16);
+  border-radius: 10px;
+  position: fixed;
+  top: 80px;
+  left: 80px;
+  padding: 10px 10px;
+  padding-bottom: 10px;
+  #title {
+    font-size: 30px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+  }
+  .country {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 22px;
+    margin-top: 20px;
+
+    div {
+      width: 150px;
+      height: 100%;
+    }
+    h3 {
+      font-weight: 100 !important;
+      margin: 10px 0px !important;
+      width: 100%;
+      padding: 2px 2px;
+      transition: all 0.3s ease;
+      a {
+        text-decoration: none;
+        margin-top: 20px !important;
+      }
+    }
+    h3:hover {
+      border-radius: 5px;
+      padding-left: 10px;
+      background-color: red;
+      a {
+        color: white;
+      }
+    }
+  }
+}
+.nav {
+  width: 805px;
+  background-color: white;
+  position: fixed;
+  left: 480px;
+
+  top: 70px;
+  h2 {
+    text-align: center;
+    color: red;
+    line-height: 50px;
+    padding-top: 30px;
+    font-size: 22px;
+  }
+}
+//
+.latest-transfers {
+  display: inline-block;
+  width: 800px;
+  margin-left: 480px;
+  margin-top: 220px;
+
+  p {
+    text-align: center;
+    margin: 50px 0px;
+  }
+}
+.players {
+  width: 100%;
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    td {
+      width: 140px;
+      margin-bottom: 4px;
+      padding: 10px 0px;
+      font-size: 18px;
+      border-bottom: 2px solid rgb(255, 0, 0);
+      text-align: center;
+      // border: 1px solid red;
+      // text-align: center;
+    }
+  }
+}
+.playerss {
+  width: 100%;
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    td {
+      width: 200px;
+      margin-bottom: 4px;
+      padding: 10px 0px;
+      font-size: 18px;
+      border-bottom: 2px solid rgb(255, 0, 0);
+      text-align: center;
+      // border: 1px solid red;
+      // text-align: center;
+    }
+  }
+}
+.top-players {
+  width: 100%;
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    td {
+      width: 100px;
+      margin-bottom: 4px;
+      font-size: 18px;
+      border-bottom: 2px solid rgb(255, 0, 0);
+      text-align: center;
+      padding: 10px 0px;
+    }
+  }
+}
+.latest-transfers {
+  display: inline-block;
+  width: 800px;
+  margin-left: 480px;
+  margin-top: 220px;
+
+  // .players {
+  //   width: 100%;
+  //   tr {
+  //     border: 1px solid black;
+  //   }
+  //   td {
+  //     width: 100px;
+  //     line-height: 40px;
+  //     font-size: 18px;
+  //     // text-align: center;
+  //   }
+  // }
+  p {
+    text-align: center;
+  }
+}
+.content {
+  max-width: 800px;
+  margin-left: 480px;
+  margin-top: 200px;
+  padding-bottom: 100px;
+  hr {
+    margin: 20px 0px;
+  }
+  p,
+  b {
+    margin-top: 20px;
+  }
+}
+
+.content-nav {
+  border-top: 2px solid rgb(255, 0, 0);
+  border-bottom: 2px solid rgb(255, 0, 0);
+  width: 100%;
+  tr {
+    display: flex;
+    justify-content: space-between !important;
+    td {
+      width: 140px;
+      color: red;
+      text-align: center;
+    }
+  }
+}
+
+// clubs page
+.clubs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px 20px;
+  .club {
+    width: 170px;
+    height: 50px;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      // box-shadow: 0 0 5px 5px lightblue;
+      border: none;
+      border-radius: 5px;
+      background-color: lightblue;
+      border-left: 4px solid red;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      &:hover {
+        color: red !important;
+      }
+      text-decoration: none;
+      color: rgb(58, 74, 219);
+      font-style: 8px;
+      font-weight: 550 !important;
+      letter-spacing: 1px;
+      word-spacing: 4px;
+      img {
+        width: 55px;
+      }
+    }
+  }
+}
+// stats
+
+.stats {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  div a {
+    width: 350px;
+    text-decoration: none;
+    height: 80px;
+    background-color: rgb(7, 182, 240);
+    margin-bottom: 20px;
+    transition: all 0.4s ease;
+    border-radius: 0 15px;
+    &:hover {
+      box-shadow: 0 0 20px 5px rgb(254, 175, 175);
+      border-radius: 15px 0;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+  }
+}
+.about-me {
+  line-height: 25px;
+  text-align: left;
+}
+.footer {
+  width: 100%;
+  background-color: red;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  padding-left: 80px;
+  a {
+    margin-right: 50px;
+    color: white;
+    text-decoration: none;
+    word-spacing: 8px;
+    padding: 4px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    div {
+      display: flex;
+      align-items: center;
+    }
+    &:hover {
+      background-color: rgb(7, 182, 240) !important;
+      box-shadow: 0px 0px 10px 2px rgba(104, 210, 245, 0.63);
+    }
+  }
+}
+.state-footer {
+  position: fixed;
+  bottom: 0px;
+}
+// telefon versiya
+@media (max-width: 576px) {
+  .container {
+    width: 100% !important;
+    overflow: hidden;
+    padding-bottom: 70px !important;
+    p {
+      font-size: 10px !important;
+      margin: 25px 0px !important;
+    }
+  }
+  .country-menu-btn,
+  .navbar-menu-btn {
+    display: block !important;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+  }
+  .country-menu-btn,
+  .navbar-menu-btn {
+    color: white !important;
+    font-size: 22px;
+    margin-top: 0px;
+  }
+  .country-menu-btn div,
+  .navbar-menu-btn div {
+    width: 30px;
+    height: 4px;
+    margin-bottom: 8px;
+    border: 1px solid white !important;
+    background-color: white;
+    transition: all 0.5s ease;
+  }
+  .line11 {
+    transform: translateY(12px) rotate(45deg);
+  }
+  .line22 {
+    opacity: 0;
+  }
+  .line33 {
+    transform: translateY(-12px) rotate(-45deg);
+  }
+  .country-menu,
+  .navbar-menu {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    transition: all 0.5s ease;
+    height: 80vh;
+    top: 76px;
+    position: absolute;
+    h3 {
+      margin: 5px 0px;
+      a {
+        text-decoration: none;
+        border-bottom: 2px solid black;
+        font-size: 20px !important;
+        border-radius: 20px !important;
+        padding: 0px 12px !important;
+        color: white;
+        &:hover {
+          background-color: red;
+        }
+      }
+    }
+  }
+  .navbar-menu {
+    right: -100%;
+    h3 {
+      margin: 10px 0px;
+    }
+  }
+  .country-menu {
+    left: -100%;
+  }
+  .country-menu.active {
+    background-color: rgb(1, 148, 197);
+    left: 0px;
+  }
+  .navbar-menu {
+    right: -100%;
+  }
+  .navbar-menu.active {
+    background-color: red;
+    right: 0px;
+  }
+  .country-menu-btn {
+    left: 20px;
+  }
+  .navbar-menu-btn {
+    right: 20px;
+  }
+
+  .country-clubs {
+    background-color: black;
+    display: none;
+  }
+  .nav {
+    position: sticky !important;
+    width: 70% !important;
+    text-align: center !important;
+    left: 0px !important;
+    display: block !important;
+    margin: 0 auto !important;
+    .content-nav {
+      width: 100% !important;
+      left: 0;
+    }
+    h2 {
+      width: 100%;
+      text-align: center !important;
+    }
+  }
+  .country {
+    display: none !important;
+  }
+  .content {
+    width: 100% !important;
+    // border: 1px solid black;
+    margin: 0 auto !important;
+    margin-top: 100px !important;
+    padding: 0px 5px;
+    h4 {
+      text-align: center;
+      padding: 0px 10px;
+    }
+    p,
+    a,
+    b {
+      text-align: center;
+      padding: 0px 30px;
+      width: 100% !important;
+    }
+    .clubs {
+      width: 100% !important;
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: space-evenly !important;
+      padding-bottom: 40px;
+      .club {
+        // background-color: black;
+        width: 150px !important;
+        padding: 0px;
+        a {
+          padding: 0px !important;
+        }
+      }
+    }
+  }
+
+  .latest-transfers {
+    width: 100% !important;
+    margin: 0 auto !important;
+    margin-top: 100px !important;
+    .countries {
+      width: 100%;
+      // height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center !important;
+      gap: 40px !important;
+      align-items: center;
+      padding-top: 100px;
+      padding-bottom: 80px;
+
+      a {
+        width: 90%;
+        height: 80px;
+        margin: 0 auto;
+        font-size: 30px;
+      }
+    }
+    hr {
+      display: none;
+    }
+  }
+  .navbar {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .links {
+    display: none !important;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0px;
+    a {
+      font-size: 15px;
+      width: 500px !important;
+      div {
+        display: flex;
+        align-items: center;
+        i {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  .nav {
+    width: 100% !important;
+  }
+  .content-nav {
+    position: sticky !important;
+    left: 0 !important;
+    margin: 0 auto !important;
+  }
+  .players {
+    gap: 0px !important;
+    tr {
+      flex-wrap: nowrap !important;
+      td {
+        width: 50px !important;
+        font-size: 11px !important;
+      }
+      // gap: 50px;
+    }
+    // tr td:nth-child(3), td:nth-child(4), td:nth-child(5){
+    //   display: none;
+    // }
+  }
+
+  // tr td:nth-child(3), td:nth-child(4), td:nth-child(5){
+  //   display: none;
+  // }
+  .top-players {
+    tr td {
+      width: 60px !important;
+      font-size: 13px !important;
+    }
+  }
+  .playerss {
+    gap: 0px !important;
+    tr {
+      flex-wrap: nowrap !important;
+      td {
+        // min-width: 100px !important;
+        width: 100px !important;
+        font-size: 11px !important;
+      }
+      // gap: 50px;
+    }
+  }
+  .stats {
+    margin-top: 150px !important;
+    gap: 30px;
+    div {
+      width: 90% !important;
+    }
+  }
+}
+@media (min-width: 1450px) {
+  .content {
+    max-width: 1000px !important;
+    margin-left: 35%;
+
+    .clubs {
+      width: 100%;
+      .club {
+        width: 200px;
+        margin: 0px 30px;
+      }
+    }
+  }
+  .nav {
+    left: 35%;
+    width: 1000px;
+  }
+  .latest-transfers {
+    margin-left: 35%;
+    width: 1000px;
+  }
+  .top-players{
+    tr{
+      td{
+        width: 150px;
+      }
+    }
+  }
+}

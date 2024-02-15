@@ -1,0 +1,25 @@
+{% extends 'header.html' %}
+
+{% block content %}
+    <div class="nav">
+        <h2>– CLUBS –</h2>
+        <table class="content-nav"></table>
+    </div>
+    <div class="content" style="margin-top: 170px">
+        <div class="clubs">
+            {% for club in clubs %}
+                <div class="club">
+                    <a href="#">
+                        <img src="{{club.rasm.url}}" alt="Bu yerda rasm bor"/>
+                        {{ club.nom }}
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+        <p>
+            It is a list of clubs with at least one ongoing employment contract
+            with player whose predicted transfer value is at least 20 million
+            euro.
+        </p>
+    </div>
+{% endblock %}
