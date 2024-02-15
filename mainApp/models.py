@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Davlat(models.Model):
-    nom = models.CharField(max_length=255, unique=True)
+    nom = models.CharField(max_length=255)
 
     class Meta:
         verbose_name = "Davlat"

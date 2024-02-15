@@ -1,6 +1,6 @@
 {% extends 'header.html' %}
-
 {% block content %}
+
     <div class="nav">
         <h2>– CLUBS –</h2>
         <table class="content-nav"></table>
@@ -10,7 +10,7 @@
             {% for club in clubs %}
             <div class="club">
                 <a href="#">
-                    <img src="{{ club.rasm }}" alt=""/>
+                    <img src="{{ club.rasm.url }}" alt=""/>
                     {{ club.nom }}
                 </a>
             </div>
@@ -22,4 +22,5 @@
             euro.
         </p>
     </div>
+
 {% endblock %}

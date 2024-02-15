@@ -20,6 +20,9 @@ class PlayerAdmin(admin.ModelAdmin):
 
 class TransferAdmin(admin.ModelAdmin):
     list_display = ('player', 'club_eski', 'club_yangi', 'narx')
+    search_fields = ['club']
+    list_filter = ['mavsum']
+    autocomplete_fields = ['club_eski','club_yangi','player']
 
 
 admin.site.register(Club, ClubAdmin)
