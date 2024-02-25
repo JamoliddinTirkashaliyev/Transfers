@@ -3,23 +3,19 @@
 {% block content %}
 <div class="nav">
     <h2>– LATEST TRANSFERS –</h2>
-    <table class="content-nav">
-        <thead>
+    <table class="players">
+           {% for transfer in transfers %}
         <tr>
-            <td>#player</td>
-            <td>from</td>
-            <td>to</td>
-            <td>
-                transfer fee, <br/>
-                mill. euro
-            </td>
-            <td>
-                transfer fee, <br/>
-                mill. euro, <br/>
-                by tft.com
-            </td>
+
+            <td>{{transfer.player.ism}}</td>
+            <td>{{transfer.club_eski.nom}}</td>
+            <td>{{transfer.club_yangi.nom}}</td>
+            <td>{{transfer.narx}}</td>
+            <td>{{transfer.taxmin_narx}}</td>
+
         </tr>
-        </thead>
+        {% endfor %}
+        </tr>
     </table>
 </div>
 <div class="latest-transfers">

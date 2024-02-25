@@ -1,0 +1,40 @@
+{% extends 'header.html' %}
+
+{% block content %}
+<div class="nav">
+
+    <h2>– {{ players.first.club.nom }} –</h2>
+    <table class="content-nav">
+        <thead>
+        <tr>
+            <td>player</td>
+            <td>positsion</td>
+            <td>nationality</td>
+            <td>
+                transfer value, <br/>
+                mill. euro
+            </td>
+        </tr>
+        </thead>
+    </table>
+</div>
+<div class="content">
+    <table class="players">
+        {% for i in players %}
+        <tr>
+            <td>{{ i.ism }}</td>
+            <td>{{ i.club.nom }}</td>
+            <td>{{ i.davlat }}</td>
+            <td>{{ i.narx }}</td>
+            <td>{{ i.t_yil }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae soluta
+        sequi quia eos cupiditate rerum accusantium odit enim, expedita,
+        architecto error dignissimos voluptatibus. Nisi illo, maiores fugit
+        amet neque eveniet!
+    </p>
+</div>
+{% endblock %}

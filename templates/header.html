@@ -67,10 +67,10 @@
             <div><a href="{% url 'clubs' %}">CLUBS</a></div>
             <div><a href="{% url 'lastest_transfers' %}">LATEST TRANSFERS</a></div>
             <div><a href="{% url 'players' %}">PLAYERS</a></div>
-            <div><a href="#">U-20 PLAYERS</a></div>
-            <div><a href="#">TRYOUTS</a></div>
-            <div><a href="#">STATS</a></div>
-            <div class="navActive"><a href="#">ABOUT US</a></div>
+            <div><a href="{% url 'u_20' %}">U-20 PLAYERS</a></div>
+            <div><a href="{% url 'tryouts' %}">TRYOUTS</a></div>
+            <div><a href="{% url 'stats' %}">STATS</a></div>
+            <div class="navActive"><a href="{% url 'about'%}">ABOUT US</a></div>
         </div>
     </div>
     <div class="country-clubs">
@@ -90,7 +90,7 @@
             </div>
         </div>
         <hr>
-        <h2><a href="/transfer-archive/">Transfers archive</a></h2>
+        <h2><a href="{% url 'archive' %}">Transfers archive</a></h2>
     </div>
     {% block content %}
 

@@ -4,12 +4,12 @@
 
 <div class="latest-transfers">
     <div class="countries">
-        <a href="./clubs.html"> CLUBS </a>
-        <a href="./latest-transfers.html"> LATEST TRANSFERS </a>
-        <a href="./players.html"> PLAYERS </a>
-        <a href="./U-20 players.html"> U-20 PLAYERS </a>
-        <a href="./tryouts.html"> TRYOUTS </a>
-        <a href="./stats.html"> STATS </a>
+        <a href="{% url 'clubs' %}"> CLUBS </a>
+        <a href="{% url 'lastest_transfers' %}"> LATEST TRANSFERS </a>
+        <a href="{% url 'players' %}"> PLAYERS </a>
+        <a href="{% url 'u_20' %}"> U-20 PLAYERS </a>
+        <a href="{% url 'tryouts' %}"> TRYOUTS </a>
+        <a href="{% url 'stats' %}"> STATS </a>
     </div>
 </div>
 {% endblock %}
